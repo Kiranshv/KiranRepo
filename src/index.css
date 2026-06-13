@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Manrope', sans-serif;
+  --bg-main: #f6f8fb;
+  --bg-card: #ffffff;
+  --bg-muted: #edf1f8;
+  --text-main: #18212f;
+  --text-soft: #5e6a7b;
+  --border: #d9e2ef;
+}
+
+.dark {
+  --bg-main: #0e1624;
+  --bg-card: #162132;
+  --bg-muted: #1c2a40;
+  --text-main: #f3f7ff;
+  --text-soft: #a9b9d3;
+  --border: #2c3f5e;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--text-main);
+  background:
+    radial-gradient(circle at 10% 0%, rgba(127, 170, 255, 0.18), transparent 40%),
+    radial-gradient(circle at 100% 100%, rgba(43, 208, 184, 0.1), transparent 45%),
+    var(--bg-main);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.app-shell {
+  min-height: 100vh;
+  color: var(--text-main);
+}
+
+.glass {
+  background-color: color-mix(in oklab, var(--bg-card), transparent 8%);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(8px);
+}
+
+.column-scroll {
+  max-height: calc(100vh - 250px);
+}
+
+input,
+textarea,
+select {
+  color: var(--text-main);
+}
