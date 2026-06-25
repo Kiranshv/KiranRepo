@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --background: #08111f;
+  --background-soft: #101d32;
+  --card: rgba(14, 24, 41, 0.9);
+  --border: rgba(142, 161, 196, 0.18);
+  --muted: #96a7c7;
+  --text: #eaf1ff;
+  --accent: #f6c453;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--background);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(246, 196, 83, 0.18), transparent 32%),
+    radial-gradient(circle at 80% 0%, rgba(75, 154, 255, 0.16), transparent 38%),
+    linear-gradient(180deg, #08111f 0%, #0b1424 40%, #0d1728 100%);
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+a {
+  color: inherit;
+}
+
+.border-border {
+  border-color: var(--border);
+}
+
+.bg-card {
+  background: var(--card);
+}
+
+.text-muted {
+  color: var(--muted);
+}
+
+.bg-accent {
+  background: var(--accent);
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.prose pre {
+  overflow-x: auto;
+}
+
+.prose {
+  color: #dde7fa;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4 {
+  color: #f8fbff;
+}
