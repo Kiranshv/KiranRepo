@@ -183,10 +183,10 @@ export default function Page(): JSX.Element {
       <header className="overflow-hidden rounded-[2rem] border border-border bg-card/90 p-6 shadow-[0_30px_120px_rgba(5,12,24,0.55)]">
         <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
           <div>
-            <p className="text-xs uppercase tracking-[0.35em] text-amber-200/70">Vercel-hostable content system</p>
-            <h1 className="mt-3 text-4xl font-semibold text-white">ContentForge</h1>
+            <p className="text-xs uppercase tracking-[0.35em] text-amber-200/70">KIRAN AI content command center</p>
+            <h1 className="mt-3 text-4xl font-semibold text-white">KIRAN ContentForge</h1>
             <p className="mt-3 max-w-2xl text-sm text-muted">
-              Groq generates topics and content. Supabase stores rows, logs, and image assets. Images stay manual and can use Gemini or Hugging Face.
+              Plan, generate, and manage social content in one place. Groq powers ideation and drafts, Supabase tracks data and assets, and image generation runs on Gemini or Hugging Face.
             </p>
           </div>
 

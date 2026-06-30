@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "ContentForge",
-  description: "Hosted AI content pipeline dashboard powered by Groq and Supabase"
+  title: "KIRAN ContentForge",
+  description: "KIRAN AI content command center powered by Groq, Supabase, and multimodel image workflows"
 };
 
 export default function RootLayout({
